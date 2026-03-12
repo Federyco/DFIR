@@ -1,10 +1,10 @@
 
-https://tryhackme.com/room/volatilityessentials
+https://tryhackme.com/room/volatilityessentials [No Completado]
 
 ![[Pasted image 20260311182223.png]]
 
 
-https://tryhackme.com/room/volatility
+https://tryhackme.com/room/volatility [Completado]
 
 ![[Pasted image 20260311182231.png]]
 

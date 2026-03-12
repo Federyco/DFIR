@@ -1,18 +1,18 @@
 
-https://tryhackme.com/room/digitalforensicsfundamentals
+https://tryhackme.com/room/digitalforensicsfundamentals [Completado]
 
 ![[Pasted image 20260311181600.png]]
 
-https://tryhackme.com/room/windowsforensics1
+https://tryhackme.com/room/windowsforensics1 [Completado]
 
 ![[Pasted image 20260311181616.png]]
 
 
-https://tryhackme.com/room/windowsforensics2
+https://tryhackme.com/room/windowsforensics2 [Completado]
 
 ![[Pasted image 20260311181626.png]]
 
-https://tryhackme.com/room/winincidentsurface
+https://tryhackme.com/room/winincidentsurface [No Completado]
 
 ![[Pasted image 20260311181715.png]]
 

@@ -1,19 +1,19 @@
-https://tryhackme.com/room/unattended
+https://tryhackme.com/room/unattended [Completado]
 
 ![[Pasted image 20260311183125.png]]
 
-https://tryhackme.com/room/disgruntled
+https://tryhackme.com/room/disgruntled [Completado]
 
 ![[Pasted image 20260311183144.png]]
 
-https://tryhackme.com/room/critical
+https://tryhackme.com/room/critical [No Completado]
 
 ![[Pasted image 20260311183204.png]]
 
-https://tryhackme.com/room/registry4n6
+https://tryhackme.com/room/registry4n6 [No Completado]
 
 ![[Pasted image 20260311183232.png]]
 
-https://tryhackme.com/room/caseb4dm755
+https://tryhackme.com/room/caseb4dm755 [No Completado]
 
 ![[Pasted image 20260311183257.png]]
