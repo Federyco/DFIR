@@ -1,5 +1,5 @@
 
-https://tryhackme.com/module/incident-response [No Completado]
+- https://tryhackme.com/module/incident-response [No Completado]
 
 ![[Pasted image 20260311181340.png]]
 
@@ -11,30 +11,199 @@ Recovery
 Chain of custody  
 Evidence handling
 
-https://tryhackme.com/room/becomingafirstresponder
-
+- https://tryhackme.com/room/becomingafirstresponder [Completado]
+ 
 ![[Pasted image 20260311214930.png]]
 
 
-https://tryhackme.com/room/introtoirandim
+
+![[Pasted image 20260314021422.png]]
+
+![[Pasted image 20260314021741.png]]
+[Guideline for Evidence Collection and Archiving](https://datatracker.ietf.org/doc/html/rfc3227#section-2.1)
+
+![[Pasted image 20260314021823.png]]
+![[Pasted image 20260314021834.png]]
+![[Pasted image 20260314021844.png]]
+
+![[Pasted image 20260314022013.png]]
+![[Pasted image 20260314022020.png]]
+![[Pasted image 20260314022037.png]]
+![[Pasted image 20260314022104.png]]
+![[Pasted image 20260314022154.png]]
+
+![[Pasted image 20260314022305.png]]
+![[Pasted image 20260314022313.png]]
+
+![[Pasted image 20260314111755.png]]
+![[Pasted image 20260314111801.png]]
+
+![[Pasted image 20260314111920.png]]
+![[Pasted image 20260314111940.png]]
+![[Pasted image 20260314111950.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- https://tryhackme.com/room/introtoirandim [Completado]
+
 
 ![[Pasted image 20260311214940.png]]
 
-https://tryhackme.com/room/loggingforaccountability
+![[Pasted image 20260314015219.png]]
+
+![[Pasted image 20260314015230.png]]
+
+![[Pasted image 20260314015242.png]]
+
+![[Pasted image 20260314015252.png]]
+
+![[Pasted image 20260314015259.png]]
+
+![[Pasted image 20260314020230.png]]
+![[Pasted image 20260314020245.png]]
+
+![[Pasted image 20260314020728.png]]
+
+![[Pasted image 20260314020738.png]]
+![[Pasted image 20260314020752.png]]
+
+
+
+
+
+- https://tryhackme.com/room/loggingforaccountability [Completado]
 
 ![[Pasted image 20260311214949.png]]
 
-https://tryhackme.com/room/introtologs
+![[Pasted image 20260314010235.png]]
+
+[STRIDE CHART](https://www.microsoft.com/en-us/security/blog/2007/09/11/stride-chart/)
+
+
+
+
+
+- https://tryhackme.com/room/auditingandmonitoringse [No Completado]
+
+![[Pasted image 20260314010514.png]]
+
+- https://tryhackme.com/room/iaaaidm [No Completado]
+
+![[Pasted image 20260314010606.png]]
+
+- https://tryhackme.com/room/securityprinciples [No Completado]
+
+![[Pasted image 20260314010640.png]]
+
+
+
+- https://tryhackme.com/room/introtologs [Completado]
 
 ![[Pasted image 20260311215003.png]]
 
-https://tryhackme.com/room/splunk101
+
+![[Pasted image 20260313170138.png]]
+
+![[Pasted image 20260313170201.png]]
+
+Example:
+![[Pasted image 20260313170214.png]]
+
+se pueden crear archivos de rsyslogs basados en configuraciones, para este ejemplo se utilizará el servicio ssh
+
+![[Pasted image 20260313175633.png]]
+
+![[Pasted image 20260313175646.png]]
+
+
+
+![[Pasted image 20260313180120.png]]
+
+```yaml
+# Process nginx access log
+awk -F'[][]' '{print "[" $2 "]", "--- /var/log/gitlab/nginx/access.log ---", "\"" $0 "\""}' /var/log/gitlab/nginx/access.log  | sed "s/ +0000//g" > /tmp/parsed_consolidated.log
+
+# Process rsyslog_cron.log
+awk '{ original_line = $0; gsub(/ /, "/", $1); printf "[%s/%s/2023:%s] --- /var/log/websrv-02/rsyslog_cron.log --- \"%s\"\n", $2, $1, $3, original_line }' /var/log/websrv-02/rsyslog_cron.log >> /tmp/parsed_consolidated.log
+
+# Process rsyslog_sshd.log
+awk '{ original_line = $0; gsub(/ /, "/", $1); printf "[%s/%s/2023:%s] --- /var/log/websrv-02/rsyslog_sshd.log --- \"%s\"\n", $2, $1, $3, original_line }' /var/log/websrv-02/rsyslog_sshd.log >> /tmp/parsed_consolidated.log
+
+# Process gitlab-rails/api_json.log
+awk -F'"' '{timestamp = $4; converted = strftime("[%d/%b/%Y:%H:%M:%S]", mktime(substr(timestamp, 1, 4) " " substr(timestamp, 6, 2) " " substr(timestamp, 9, 2) " " substr(timestamp, 12, 2) " " substr(timestamp, 15, 2) " " substr(timestamp, 18, 2) " 0 0")); print converted, "--- /var/log/gitlab/gitlab-rails/api_json.log ---", "\""$0"\""}' /var/log/gitlab/gitlab-rails/api_json.log >> /tmp/parsed_consolidated.log
+```
+
+![[Pasted image 20260313180134.png]]
+
+
+https://tryhackme.com/room/splunk101 [Completado]
 
 ![[Pasted image 20260311215012.png]]
 
+![[Pasted image 20260313212003.png]]
+
+![[Pasted image 20260313212010.png]]
+![[Pasted image 20260313212022.png]]
+![[Pasted image 20260313212034.png]]
+
+![[Pasted image 20260313212352.png]]
+
+![[Pasted image 20260313212419.png]]
+
+![[Pasted image 20260313212430.png]]
+
+Splunk se maneja por querys, en la documentación esta toda la info.
 
 
-https://tryhackme.com/room/windowseventlogs
+[link directo a operadores lógicos](https://docs.splunk.com/Special:SplunkSearch/docs?q=logical%20operators&size=n_10_n&filters%5B0%5D%5Bfield%5D=source_name_s&filters%5B0%5D%5Bvalues%5D%5B0%5D=Docs&filters%5B0%5D%5Btype%5D=any)
+
+
+- https://tryhackme.com/room/splunkexploringspl [No Completado]
+
+![[Pasted image 20260314005803.png]]
+
+- https://tryhackme.com/room/splunk201
+![[Pasted image 20260313211038.png|697]]
+
+- https://tryhackme.com/room/benign [No Completado]
+
+
+![[Pasted image 20260313211131.png]]
+
+- https://tryhackme.com/room/investigatingwithsplunk [No Completado]
+
+![[Pasted image 20260313211220.png]]
+
+- https://tryhackme.com/room/investigatingwithelk101 [No Completado]
+
+![[Pasted image 20260313211245.png]]
+
+ - https://tryhackme.com/room/itsybitsy [No Completado]
+
+![[Pasted image 20260313211302.png]]
+
+- https://tryhackme.com/room/posheclipse [No Completado]
+
+![[Pasted image 20260314005734.png]]
+
+
+
+- https://tryhackme.com/room/windowseventlogs [Completado]
 
 
 ![[Pasted image 20260311215447.png]]
@@ -97,33 +266,66 @@ USER and EventID query
 Get-WinEvent -LogName Security -FilterXPath '*/EventData/Data[@Name="TargetUserName"]="Sam" and */System/EventID=4720'
 
 
+# Test Windows Event Log
+
+
+### Scenario 1 (Questions 1 & 2) : The server admins have made numerous complaints to Management regarding PowerShell being blocked in the environment. Management finally approved the usage of PowerShell within the environment. Visibility is now needed to ensure there are no gaps in coverage. You researched this topic: what logs to look at, what event IDs to monitor, etc. You enabled PowerShell logging on a test machine and had a colleague execute various commands.
+
+- Haciendo uso del comando webtutil podemos revisar los logs en busca del evento "Power Shell Scrypt Block Logging" (4104) y filtramos en base a si el campo ScriptBlockText contiene información, obtenemos su fecha (Date)
+	wevtutil qe C:\Users\Administrator\Desktop\merged.evtx /lf:true /q:"*[System[(EventID=4104)]]" /f:text | findstr "Date ScriptBlockText"
+
+
+leyendo log borrado
+
+Get-WinEvent -Path .\Desktop\merged.evtx -FilterXPath "*[System[(EventID=4104)] and EventData[Data[@Name='ScriptBlockText']]]"  -Oldest -MaxEvents 1 | Format-List
+
+
+
+
+## Información Útil
+
+
+**[EVTX-ATTACK-SAMPLES](https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES)**
+
+
+# [PowerShell ♥ the Blue Team](https://devblogs.microsoft.com/powershell/powershell-the-blue-team/)
+
+
+# [Tampering with Windows Event Tracing: Background, Offense, and Defense](https://blog.palantir.com/tampering-with-windows-event-tracing-background-offense-and-defense-4be7ac62ac63)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Firewall Logs (Windows)
 
 ![[Pasted image 20260312174402.png]]
 
 ## Cyber Kill Chain
-https://tryhackme.com/room/cyberkillchain.
+- https://tryhackme.com/room/cyberkillchain [No Completado]
 
 ![[Pasted image 20260312174549.png]]
 
 
 ## Cyber Security 101 (Path)
 
-https://tryhackme.com/path/outline/cybersecurity101
+- https://tryhackme.com/path/outline/cybersecurity101 [No Completado]
 
 ![[Pasted image 20260312174609.png]]
 
 
-
-
-
-
-
-
-
 ## Mitre ATT&CK
 
-https://tryhackme.com/room/mitre
+- https://tryhackme.com/room/mitre [No Completado]
 
 ![[Pasted image 20260312174514.png]]
 

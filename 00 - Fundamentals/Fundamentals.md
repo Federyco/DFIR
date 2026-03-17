@@ -1,6 +1,4 @@
 
-
-
 *https://tryhackme.com/room/introdigitalforensics* [Completado]
 ![[Pasted image 20260311180204.png]]
 
@@ -227,11 +225,273 @@ https://tryhackme.com/room/networkingsecureprotocols
 
 ![[Pasted image 20260312175803.png]]
 
-## Wireshark: The Basics [No Completado]
+- https://tryhackme.com/module/wireshark [Completado]
+![[Pasted image 20260314113132.png]]
+
+## Wireshark: The Basics [Completado]
 
 https://tryhackme.com/room/wiresharkthebasics
 
 ![[Pasted image 20260312175831.png]]
+![[Pasted image 20260314113310.png]]
+![[Pasted image 20260314113546.png]]
+![[Pasted image 20260314113807.png]]
+
+![[Pasted image 20260314113929.png]]
+[Documentation ](https://github.com/boundary/wireshark/blob/master/doc/README.dissector)
+
+Layers OSI Model in wireshark
+
+![[Pasted image 20260314114051.png]]
+
+El TTL o Time to Live es un valor que indica **cuánto tiempo o cuántos saltos puede vivir un paquete en la red antes de ser descartado**.
+
+TCP Payload size = TCP segment Length
+
+La **ETag (Entity Tag)** es un identificador que usa **HTTP** para saber **si un recurso cambió o no en el servidor**. Se utiliza principalmente para **caching y control de versiones de archivos web**. 
+
+Está definido dentro del protocolo **HTTP**.
+![[Pasted image 20260314130656.png]]
+![[Pasted image 20260314123431.png]]
+![[Pasted image 20260314130529.png]]
+![[Pasted image 20260314130450.png]]
+![[Pasted image 20260314130510.png]]
+![[Pasted image 20260314130538.png]]
+![[Pasted image 20260314130554.png]]
+![[Pasted image 20260314130605.png]]
+![[Pasted image 20260314130616.png]]
+![[Pasted image 20260314130716.png]]
+![[Pasted image 20260314130735.png]]
+![[Pasted image 20260314130743.png]]
+![[Pasted image 20260314130753.png]]
+![[Pasted image 20260314130800.png]]
+
+
+
+- https://tryhackme.com/room/wiresharkpacketoperations [Completado]
+
+![[Pasted image 20260314113206.png]]
+
+![[Pasted image 20260314132042.png]]
+
+![[Pasted image 20260314132117.png]]
+![[Pasted image 20260314132125.png]]
+![[Pasted image 20260314132142.png]]
+![[Pasted image 20260314132153.png]]
+![[Pasted image 20260314132213.png]]
+![[Pasted image 20260314132224.png]]
+![[Pasted image 20260314132238.png]]
+
+![[Pasted image 20260314132306.png]]
+![[Pasted image 20260314132315.png]]
+![[Pasted image 20260314132327.png]]
+
+Un **AS (Autonomous System)** es una red administrada por una organización o ISP dentro de Internet.
+
+![[Pasted image 20260314200829.png]]
+![[Pasted image 20260314200847.png]]
+
+![[Pasted image 20260314200900.png]]
+
+![[Pasted image 20260314200914.png]]
+![[Pasted image 20260314200925.png]]
+
+![[Pasted image 20260314204933.png]]
+
+
+![[Pasted image 20260314205009.png]]
+
+[Filter Syntax Documentation 1](https://www.wireshark.org/docs/man-pages/pcap-filter.html)
+
+[Filter Syntax Documentation 2](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters#useful-filters)
+
+![[Pasted image 20260314205134.png]]
+![[Pasted image 20260314205144.png]]
+![[Pasted image 20260314205155.png]]
+![[Pasted image 20260314205204.png]]
+![[Pasted image 20260314205213.png]]
+![[Pasted image 20260314205223.png]]
+
+![[Pasted image 20260314214825.png]]
+![[Pasted image 20260314214852.png]]
+![[Pasted image 20260314214906.png]]
+![[Pasted image 20260314214917.png]]
+
+![[Pasted image 20260314214925.png]]
+![[Pasted image 20260314214932.png]]
+
+![[Pasted image 20260314214939.png]]
+
+![[Pasted image 20260314215007.png]]
+
+![[Pasted image 20260314230703.png]]
+![[Pasted image 20260314230712.png]]
+![[Pasted image 20260314230719.png]]
+![[Pasted image 20260314230727.png]]
+![[Pasted image 20260314230734.png]]
+![[Pasted image 20260314230741.png]]
+![[Pasted image 20260314230749.png]]
+
+![[Pasted image 20260314230756.png]]
+![[Pasted image 20260314230804.png]]
+
+![[Pasted image 20260314230811.png]]
+![[Pasted image 20260314230818.png]]
+
+![[Pasted image 20260314230825.png]]![[Pasted image 20260314230832.png]]
+
+![[Pasted image 20260314230840.png]]![[Pasted image 20260314230846.png]]
+
+![[Pasted image 20260314230900.png]]
+
+![[Pasted image 20260314230913.png]]
+
+Desafio interesante, buscar TTLS con números pares.
+
+Query: string(ip.ttl) matches "[02468]$"
+
+
+
+
+- https://tryhackme.com/room/wiresharktrafficanalysis [Completado]
+
+![[Pasted image 20260314113226.png]]
+
+![[Pasted image 20260315000535.png]]
+
+![[Pasted image 20260315000550.png]]
+![[Pasted image 20260315000609.png]]
+
+![[Pasted image 20260315000626.png]]
+![[Pasted image 20260315000635.png]]
+
+![[Pasted image 20260315000644.png]]
+![[Pasted image 20260315000701.png]]
+![[Pasted image 20260315000711.png]]
+
+![[Pasted image 20260315000721.png]]
+
+
+![[Pasted image 20260315005908.png]]
+![[Pasted image 20260315005918.png]]
+![[Pasted image 20260315005926.png]]
+![[Pasted image 20260315005932.png]]
+![[Pasted image 20260315005940.png]]
+![[Pasted image 20260315005947.png]]
+![[Pasted image 20260315005954.png]]
+![[Pasted image 20260315010004.png]]
+![[Pasted image 20260315010011.png]]
+![[Pasted image 20260315010018.png]]
+![[Pasted image 20260315010026.png]]
+![[Pasted image 20260315010037.png]]
+
+
+
+filtrando ARP del atacante - `arp.opcode == 1 and arp.src.hw_mac == <mac_atacante>`
+
+filtrando http packets recibidos por el atacante - `http && eth.dst == 00:0c:29:e2:18:b4`
+
+filtrando datos obtenidos por el atacante utilizando Man in the Middle - `http.request.method == POST and http.request.full_uri == "http://testphp.vulnweb.com/userinfo.php" and urlencoded-form contains "uname" and urlencoded-form contains "pass"`
+
+As de búsqueda muy importante `urlencoded-form contains "<texto_interno_url o keys>"`
+
+
+![[Pasted image 20260316014928.png]]
+![[Pasted image 20260316014948.png]]
+![[Pasted image 20260316014959.png]]
+
+![[Pasted image 20260316015008.png]]
+
+![[Pasted image 20260316015020.png]]
+![[Pasted image 20260316015026.png]]
+
+## NetBios & DHCP
+
+Los filtros pueden estar apuntados a las opciones de protocolo, en este caso al hostname, ya que es uno conocido, se los solicita buscar al hostname "Galaxy A30"
+
+la query es - `dhcp.option.hostname contains "30"`
+
+se probó con el nombre completo solicitado, pero la única búsqueda que dio resultado fue esta.
+
+filtrando cuentas request netBIOS tiene la workstation "LIVALJM" - `nbns.flags.opcode == 5 and nbns.name contains "LIV"`
+
+buscando el host que solicita una ip, se puede utilizar el filtro - `dhcp.option.requested_ip_address==<ip_source>`
+
+## Kerberos
+
+Encontrar la ip de un usuario dentro del protocolo kerbero, 
+
+query - `kerberos.CNameString contains "user_name" and !(kerberos.CNameString contains "$")`
+
+la respuesta debe ser entregada en formato "defangued", esto se hace para que no se pueda interactuar con el mismo, el formato es 0[.]0[.]0[.]0. Se encierra entre corchetes cada . de separación
+
+** Esta tarea me costó bastante, y era extremadamente sencilla...**
+
+What is the hostname of the available host in the Kerberos packets?
+
+Inicialmente me acerqué utilizando el SnameString, y la respuesta estaba en al documentación
+
+query - `kerberos.CNameString contains "$"`
+
+
+![[Pasted image 20260316024250.png]]
+![[Pasted image 20260316024257.png]]
+![[Pasted image 20260316024334.png]]
+![[Pasted image 20260316024343.png]]
+
+![[Pasted image 20260316024354.png]]
+![[Pasted image 20260316024400.png]]
+![[Pasted image 20260316024407.png]]
+
+## ICMP Tunnelling
+Va obteniendo complejidad, se requiere investigar los paquetes anómalos e indicar que protocolo es utilizado en ICMP tunnelling.
+
+para eso filtamos todos los paquetes con ICMP y buscamos largos de datos repetitivos, básicamente buscamos patrones.
+encontré valores muy altos para un ICMP (1070) lo cual indicaría que dentro de esa transferencia, se está enviando un payload.
+La respuesta a la pregunta, no estaba en esos paquetes, e incluso me costó mucho encontrarlo.
+
+Existen paquetes con valores bajos, que tienen el tipo de protocolo incrustado en sus valores RAW como se ve en la imagen
+
+![[Pasted image 20260316030748.png]]
+
+![[Pasted image 20260316032148.png]]
+![[Pasted image 20260316032156.png]]
+![[Pasted image 20260316032219.png]]
+![[Pasted image 20260316032256.png]]
+
+![[Pasted image 20260316093824.png]]
+![[Pasted image 20260316093845.png]]
+![[Pasted image 20260316093857.png]]
+[Example Site](https://explore.whatismybrowser.com/useragents/explore/)
+
+![[Pasted image 20260316093922.png]]
+![[Pasted image 20260316093928.png]]
+
+
+![[Pasted image 20260316093937.png]]
+![[Pasted image 20260316093945.png]]
+
+
+![[Pasted image 20260316102817.png]]
+![[Pasted image 20260316102827.png]]
+![[Pasted image 20260316102836.png]]
+![[Pasted image 20260316102844.png]]
+![[Pasted image 20260316102851.png]]
+![[Pasted image 20260316102859.png]]
+![[Pasted image 20260316102933.png]]
+![[Pasted image 20260316102951.png]]
+![[Pasted image 20260316102959.png]]
+
+
+- https://tryhackme.com/room/tsharkthebasics [No Completado]
+
+
+![[Pasted image 20260316171249.png]]
+
+
+
+
+
 
 ## Tcpdumps: The Basics [No Completado]
 
@@ -244,3 +504,23 @@ https://tryhackme.com/room/tcpdump
 https://tryhackme.com/room/nmap
 
 ![[Pasted image 20260312175914.png]]
+
+https://tryhackme.com/room/introtosiem [Completado]
+
+![[Pasted image 20260313202509.png]]
+
+![[Pasted image 20260313205715.png]]
+![[Pasted image 20260313205726.png]]
+
+![[Pasted image 20260313205823.png]]
+![[Pasted image 20260313205839.png]]
+![[Pasted image 20260313205849.png]]
+![[Pasted image 20260313205857.png]]
+![[Pasted image 20260313205933.png]]
+![[Pasted image 20260313210110.png]]
+![[Pasted image 20260313210049.png]]
+
+
+https://tryhackme.com/room/jrsecanalystintrouxo [No Completado]
+
+![[Pasted image 20260313210921.png]]
