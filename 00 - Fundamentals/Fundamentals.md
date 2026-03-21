@@ -134,7 +134,7 @@ https://tryhackme.com/room/defensivesecurityintro
 
 ![[Pasted image 20260312175053.png]]
 
-## Search Skills [No Completado]
+## Search Skills [Completado]
 
 https://tryhackme.com/room/searchskills
 
@@ -177,29 +177,140 @@ https://tryhackme.com/room/windowsfundamentals3xzx
 
 ![[Pasted image 20260312175414.png]]
 
-## Active Directory Basics [No Completado]
+## Active Directory Basics [Completado]
 
 https://tryhackme.com/room/winadbasics
 
 ![[Pasted image 20260312175446.png]]
 
+## Active Directory Hardening [No completado]
 
-## Windows Command Line [No Completado]
+- https://tryhackme.com/room/activedirectoryhardening
+
+![[Pasted image 20260319221353.png]]
+
+## Windows Command Line [Completado]
 
 https://tryhackme.com/room/windowscommandline
 
 ![[Pasted image 20260312175507.png]]
 
-## Windows Powershell [No Completado]
+![[Pasted image 20260319221507.png]]
+![[Pasted image 20260319221518.png]]
+
+![[Pasted image 20260319222213.png]]
+![[Pasted image 20260319222223.png]]
+
+![[Pasted image 20260319222829.png]]
+![[Pasted image 20260319222836.png]]
+
+![[Pasted image 20260319222843.png]]
+![[Pasted image 20260319222850.png]]
+
+![[Pasted image 20260319222859.png]]
+![[Pasted image 20260319222907.png]]
+![[Pasted image 20260319222914.png]]
+
+![[Pasted image 20260319223407.png]]
+![[Pasted image 20260319223415.png]]
+![[Pasted image 20260319223423.png]]
+![[Pasted image 20260319223431.png]]
+![[Pasted image 20260319223441.png]]
+![[Pasted image 20260319223449.png]]
+
+![[Pasted image 20260319223652.png]]
+![[Pasted image 20260319223657.png]]
+
+Para ver procesos relacionados a un ejecutable -> EJ tasklist /FI "imagename eq notepad.exe"
+
+para matar un proceso por su PID -> taskkill /PID 1516
+
+
+
+
+## Windows Powershell [Completado]
 
 https://tryhackme.com/room/windowspowershell
 
 ![[Pasted image 20260312175538.png]]
-## Linux Shells [No Completado]
+![[Pasted image 20260319224139.png]]
+![[Pasted image 20260319224150.png]]
+![[Pasted image 20260319224156.png]]
+
+![[Pasted image 20260319224844.png]]
+![[Pasted image 20260319224850.png]]
+![[Pasted image 20260319224856.png]]
+![[Pasted image 20260319224907.png]]
+![[Pasted image 20260319224914.png]]
+![[Pasted image 20260319224920.png]]
+
+comando para obtener ejemplos ->  Get-Help New-LocalUser -examples
+
+![[Pasted image 20260319225930.png]]
+![[Pasted image 20260319225936.png]]
+![[Pasted image 20260319225944.png]]
+![[Pasted image 20260319225952.png]]
+
+![[Pasted image 20260319230523.png]]
+![[Pasted image 20260319230536.png]]
+![[Pasted image 20260319230545.png]]
+![[Pasted image 20260319230559.png]]
+
+
+Buscar archivos en la ubicación cuyo tamaño sea mayor a 100 -> Get-ChildItem | Where-Object -Property Length -gt 100
+
+
+![[Pasted image 20260319231028.png]]
+![[Pasted image 20260319231035.png]]
+![[Pasted image 20260319231047.png]]
+
+![[Pasted image 20260319231459.png]]
+
+![[Pasted image 20260319231509.png]]
+![[Pasted image 20260319231517.png]]
+![[Pasted image 20260319231524.png]]
+![[Pasted image 20260319231534.png]]
+![[Pasted image 20260319231541.png]]
+
+![[Pasted image 20260319232330.png]]
+![[Pasted image 20260319232339.png]]
+![[Pasted image 20260319232344.png]]
+
+Correr cmdlets de forma remota en equipos -> Invoke-Command -ComputerName RoyalFortune -ScriptBlock { Get-Service }
+
+si fuera con credenciales, revisar la docimentación con
+Get-Help Invoke-Command -examples
+
+## Linux Shells [Completado]
 
 https://tryhackme.com/room/linuxshells
 
+
 ![[Pasted image 20260312175559.png]]
+
+history, para mostrar comandos anteriores
+![[Pasted image 20260320052954.png]]
+
+Shell Scripting
+
+![[Pasted image 20260320053037.png]]
+![[Pasted image 20260320053050.png]]
+![[Pasted image 20260320053058.png]]
+![[Pasted image 20260320053108.png]]
+![[Pasted image 20260320053115.png]]
+
+Ejecución automática de un Script:
+
+Para hacerlo colocamos previo al nombre del archivo "./" esto le indica a la consola que debe ejecutar el archivo en la ubicación señalada, y no buscarlo desde la variable de entorno PATH como normalmente hace.
+
+Ejecución de Scripts:
+
+utilizamos chmod +x para dar permisos de ejecución a un script
+
+
+Diccionario: 
+- sheband -> es la combinación de algunos caracteres que son agregados al principio del script, comienzan con #! seguidos del nombre del interprete que se utilizará para ejecutarlo.
+
 
 ## Networking Concepts [No Completado]
 
@@ -483,11 +594,126 @@ Existen paquetes con valores bajos, que tienen el tipo de protocolo incrustado e
 ![[Pasted image 20260316102959.png]]
 
 
-- https://tryhackme.com/room/tsharkthebasics [No Completado]
+- https://tryhackme.com/room/tsharkthebasics [Completado]
 
 
 ![[Pasted image 20260316171249.png]]
 
+![[Pasted image 20260317092509.png]]
+
+![[Pasted image 20260319094215.png]]
+![[Pasted image 20260319094225.png]]
+![[Pasted image 20260319094231.png]]
+![[Pasted image 20260319094237.png]]
+
+![[Pasted image 20260319094446.png]]
+![[Pasted image 20260319094452.png]]
+![[Pasted image 20260319094458.png]]
+![[Pasted image 20260319094506.png]]
+![[Pasted image 20260319094516.png]]
+![[Pasted image 20260319094525.png]]
+
+![[Pasted image 20260319095910.png]]
+![[Pasted image 20260319095917.png]]
+
+![[Pasted image 20260319100055.png]]
+
+
+![[Pasted image 20260319100242.png]]
+![[Pasted image 20260319100254.png]]
+![[Pasted image 20260319100409.png]]
+[capture filter sintax wireshark](https://www.wireshark.org/docs/man-pages/pcap-filter.html)
+
+[capture filter sintax ](https://gitlab.com/wireshark/wireshark/-/wikis/CaptureFilters#useful-filters)
+
+
+![[Pasted image 20260319101346.png]]
+![[Pasted image 20260319101354.png]]
+
+
+
+
+
+
+- https://tryhackme.com/room/zeekbro [Completado]
+
+![[Pasted image 20260317092601.png]]
+![[Pasted image 20260317093148.png]]
+![[Pasted image 20260317093204.png]]
+![[Pasted image 20260317093216.png]]
+[ZeekWebsite](https://corelight.com/products/compare-to-zeek)
+
+![[Pasted image 20260317093302.png]]
+![[Pasted image 20260317093310.png]]
+![[Pasted image 20260317093318.png]]
+![[Pasted image 20260317093329.png]]
+![[Pasted image 20260317093337.png]]
+
+![[Pasted image 20260317093930.png]]
+![[Pasted image 20260317093941.png]]
+[zeek documentation](https://docs.zeek.org/en/current/script-reference/log-files.html)
+[coreligt log cheat sheet](https://corelight.com/products/zeek-data/)
+
+
+![[Pasted image 20260317094032.png]]
+![[Pasted image 20260317094039.png]]![[Pasted image 20260317094052.png]]
+![[Pasted image 20260317094116.png]]
+
+![[Pasted image 20260317094212.png]]
+
+![[Pasted image 20260317094222.png]]
+
+Comando util para agrupar en columnas: column -t archivo.txt | less
+
+Si tiene separadores como comas, puntos o cualquier otro simbolo: column -s separador -t archivo.txt | less
+
+
+![[Pasted image 20260317095624.png]]
+![[Pasted image 20260317095643.png]]
+![[Pasted image 20260317095652.png]]
+![[Pasted image 20260317095659.png]]
+
+![[Pasted image 20260317095713.png]]
+![[Pasted image 20260317095721.png]]
+![[Pasted image 20260317095727.png]]
+
+![[Pasted image 20260317095735.png]]
+![[Pasted image 20260317095742.png]]
+![[Pasted image 20260317095814.png]]
+![[Pasted image 20260317095827.png]]
+[Zeek Oficial Documentation about Signatures](https://docs.zeek.org/en/master/frameworks/signatures.html)
+
+![[Pasted image 20260318224756.png]]
+![[Pasted image 20260318224812.png]]![[Pasted image 20260318224819.png]]
+
+[ZeekPracticeTool](https://try.bro.org/#/?example=hello)
+[ZeekRepo](https://docs.zeek.org/en/master/reference/zeekscript/included.html)
+
+![[Pasted image 20260318230911.png]]
+![[Pasted image 20260318230921.png]]
+![[Pasted image 20260318230932.png]]
+![[Pasted image 20260318230952.png]]
+![[Pasted image 20260318231005.png]]
+![[Pasted image 20260318231017.png]]
+
+![[Pasted image 20260318233009.png]]
+[Documentacion online book](https://docs.zeek.org/en/master/frameworks/index.html)
+
+![[Pasted image 20260318233019.png]]![[Pasted image 20260318233028.png]]![[Pasted image 20260318233035.png]]
+![[Pasted image 20260318233049.png]]
+
+[Intelligente framework documentation 1](https://docs.zeek.org/en/master/frameworks/intel.html)
+[Intelligente framework documentation 2](https://docs.zeek.org/en/current/scripts/base/frameworks/intel/main.zeek.html#type-Intel::Type)
+
+![[Pasted image 20260318235546.png]]
+![[Pasted image 20260318235553.png]]
+![[Pasted image 20260318235604.png]]
+![[Pasted image 20260318235612.png]]
+![[Pasted image 20260318235621.png]]
+
+- https://tryhackme.com/room/zeekbroexercises [Completado]
+
+![[Pasted image 20260319000939.png]]
 
 
 
@@ -524,3 +750,278 @@ https://tryhackme.com/room/introtosiem [Completado]
 https://tryhackme.com/room/jrsecanalystintrouxo [No Completado]
 
 ![[Pasted image 20260313210921.png]]
+
+
+
+
+## Compromising Active directory [PATH]
+
+- https://tryhackme.com/module/hacking-active-directory [No Completado]
+
+![[Pasted image 20260319221223.png]]
+
+
+## Pre Security [PATH]
+
+- https://tryhackme.com/path/outline/presecurity [Completado]
+
+![[Pasted image 20260320054625.png]]
+
+-  https://tryhackme.com/room/offensivesecurityintro [Completado]
+- https://tryhackme.com/room/defensivesecurityintro [Completado]
+- https://tryhackme.com/room/careersincyber [Completado]
+- https://tryhackme.com/room/whatisnetworking [Completado]
+- https://tryhackme.com/room/introtolan [Completado]
+- https://tryhackme.com/room/osimodelzi [Completado]
+- https://tryhackme.com/room/packetsframes [Completado]
+- https://tryhackme.com/room/extendingyournetwork [Completado]
+- https://tryhackme.com/room/dnsindetail [Completado]
+- https://tryhackme.com/room/httpindetail [Completado]
+- https://tryhackme.com/room/howwebsiteswork [Completado]
+- https://tryhackme.com/room/puttingitalltogether [Completado]
+- https://tryhackme.com/room/insideacomputer [Completado]
+
+![[Pasted image 20260320211821.png]]
+![[Pasted image 20260320211834.png]]
+![[Pasted image 20260320211853.png]]
+![[Pasted image 20260320212203.png]]
+
+- https://tryhackme.com/room/computertypes [Completado]
+
+![[Pasted image 20260320212421.png]]
+
+![[Pasted image 20260320220122.png]]
+![[Pasted image 20260320220134.png]]
+![[Pasted image 20260320220139.png]]
+![[Pasted image 20260320220145.png]]
+![[Pasted image 20260320220309.png]]
+![[Pasted image 20260320220517.png]]
+
+- https://tryhackme.com/room/clientserverbasics [Completado]
+
+![[Pasted image 20260320222103.png]]
+![[Pasted image 20260320223748.png]]
+![[Pasted image 20260320223735.png]]
+![[Pasted image 20260320223758.png]]
+![[Pasted image 20260320223805.png]]
+![[Pasted image 20260320223819.png]]
+![[Pasted image 20260320223829.png]]
+
+
+- https://tryhackme.com/room/virtualisationbasics [Completado]
+
+![[Pasted image 20260321001036.png]]
+
+![[Pasted image 20260321001025.png]]
+
+![[Pasted image 20260321001048.png]]
+![[Pasted image 20260321001059.png]]
+![[Pasted image 20260321001134.png]]
+![[Pasted image 20260321001145.png]]
+![[Pasted image 20260321001150.png]]
+
+![[Pasted image 20260321003521.png]]
+![[Pasted image 20260321003529.png]]
+![[Pasted image 20260321003538.png]]
+![[Pasted image 20260321003543.png]]
+![[Pasted image 20260321003550.png]]
+![[Pasted image 20260321005611.png]]
+
+- https://tryhackme.com/room/cloudcomputingfundamentals [Completado]
+
+![[Pasted image 20260321005715.png]]
+
+![[Pasted image 20260321005722.png]]
+![[Pasted image 20260321005728.png]]
+![[Pasted image 20260321005734.png]]
+
+![[Pasted image 20260321005747.png]]
+![[Pasted image 20260321005754.png]]
+![[Pasted image 20260321005801.png]]
+![[Pasted image 20260321005807.png]]
+![[Pasted image 20260321005813.png]]
+![[Pasted image 20260321005820.png]]
+![[Pasted image 20260321005828.png]]
+
+![[Pasted image 20260321010033.png]]
+
+![[Pasted image 20260321010453.png]]
+
+- https://tryhackme.com/room/operatingsystemsintroduction [Completado]
+
+![[Pasted image 20260321010605.png]]
+
+![[Pasted image 20260321010611.png]]
+
+![[Pasted image 20260321010621.png]]
+![[Pasted image 20260321010630.png]]
+
+![[Pasted image 20260321010637.png]]
+![[Pasted image 20260321010643.png]]
+![[Pasted image 20260321010649.png]]
+
+![[Pasted image 20260321011200.png]]
+![[Pasted image 20260321011217.png]]
+
+![[Pasted image 20260321011224.png]]
+
+![[Pasted image 20260321011232.png]]
+![[Pasted image 20260321011238.png]]
+![[Pasted image 20260321011246.png]]
+![[Pasted image 20260321011352.png]]
+
+- https://tryhackme.com/room/windowsbasics
+
+![[Pasted image 20260321011610.png]]
+
+![[Pasted image 20260321011618.png]]
+![[Pasted image 20260321011625.png]]
+
+![[Pasted image 20260321011703.png]]
+![[Pasted image 20260321011710.png]]
+![[Pasted image 20260321011717.png]]
+![[Pasted image 20260321011728.png]]
+![[Pasted image 20260321011734.png]]
+![[Pasted image 20260321011747.png]]
+![[Pasted image 20260321011753.png]]
+![[Pasted image 20260321011759.png]]
+
+![[Pasted image 20260321012013.png]]
+![[Pasted image 20260321012022.png]]
+![[Pasted image 20260321012029.png]]
+![[Pasted image 20260321012036.png]]
+![[Pasted image 20260321012042.png]]
+![[Pasted image 20260321012048.png]]
+![[Pasted image 20260321012056.png]]
+![[Pasted image 20260321012102.png]]
+![[Pasted image 20260321012108.png]]
+![[Pasted image 20260321012116.png]]
+![[Pasted image 20260321012124.png]]
+![[Pasted image 20260321012131.png]]
+![[Pasted image 20260321012137.png]]
+![[Pasted image 20260321012617.png]]
+
+- https://tryhackme.com/room/linuxclibasics [Completado]
+
+![[Pasted image 20260321012653.png]]
+
+![[Pasted image 20260321012658.png]]
+
+
+- https://tryhackme.com/room/windowsclibasics [Completado]
+
+![[Pasted image 20260321015506.png]]
+
+![[Pasted image 20260321015516.png]]
+![[Pasted image 20260321015601.png]]![[Pasted image 20260321015932.png]]![[Pasted image 20260321020016.png]]
+
+
+- https://tryhackme.com/room/datarepresentation [Completado]
+
+![[Pasted image 20260321020039.png]]
+![[Pasted image 20260321020129.png]]
+![[Pasted image 20260321020140.png]]
+![[Pasted image 20260321020152.png]]
+![[Pasted image 20260321020158.png]]
+![[Pasted image 20260321020215.png]]
+![[Pasted image 20260321020226.png]]
+![[Pasted image 20260321020347.png]]
+![[Pasted image 20260321020356.png]]
+![[Pasted image 20260321020409.png]]
+![[Pasted image 20260321020428.png]]
+![[Pasted image 20260321020438.png]]
+![[Pasted image 20260321020451.png]]
+![[Pasted image 20260321020642.png]]
+
+- https://tryhackme.com/room/dataencoding [Completado]
+
+![[Pasted image 20260321020710.png]]
+
+![[Pasted image 20260321020719.png]]
+![[Pasted image 20260321020726.png]]
+
+
+![[Pasted image 20260321020737.png]]
+![[Pasted image 20260321020802.png]]
+![[Pasted image 20260321020815.png]]
+
+
+![[Pasted image 20260321020957.png]]
+![[Pasted image 20260321021003.png]]
+
+
+- https://tryhackme.com/room/pythonsimpledemo [Completado]
+
+![[Pasted image 20260321021158.png]]
+
+- https://tryhackme.com/room/javascriptsimpledemo [Completado]
+
+![[Pasted image 20260321021533.png]]
+
+
+- https://tryhackme.com/room/databasesqlbasics [Completado]
+
+![[Pasted image 20260321021937.png]]
+
+
+- https://tryhackme.com/room/theciatriad [Completado]
+
+![[Pasted image 20260321022333.png]]
+
+![[Pasted image 20260321022341.png]]
+![[Pasted image 20260321022401.png]]
+![[Pasted image 20260321022407.png]]
+![[Pasted image 20260321022415.png]]
+
+![[Pasted image 20260321022420.png]]
+![[Pasted image 20260321022427.png]]
+
+![[Pasted image 20260321022432.png]]
+![[Pasted image 20260321022438.png]]
+
+![[Pasted image 20260321022833.png]]
+
+- https://tryhackme.com/room/cryptographyconcepts [Completado]
+
+![[Pasted image 20260321022846.png]]
+
+![[Pasted image 20260321022904.png]]
+![[Pasted image 20260321022909.png]]
+
+![[Pasted image 20260321022922.png]]
+![[Pasted image 20260321022927.png]]
+
+![[Pasted image 20260321022933.png]]
+![[Pasted image 20260321022939.png]]
+![[Pasted image 20260321022944.png]]
+![[Pasted image 20260321022951.png]]
+![[Pasted image 20260321022959.png]]
+![[Pasted image 20260321023006.png]]
+![[Pasted image 20260321023012.png]]
+
+![[Pasted image 20260321023950.png]]
+
+- https://tryhackme.com/room/becomeahacker [Completado]
+
+![[Pasted image 20260321024019.png]]
+
+![[Pasted image 20260321024026.png]]
+![[Pasted image 20260321024031.png]]
+
+![[Pasted image 20260321024044.png]]
+
+- https://tryhackme.com/room/becomeadefender [Completado]
+
+![[Pasted image 20260321024746.png]]
+
+![[Pasted image 20260321024752.png]]
+![[Pasted image 20260321024758.png]]
+
+![[Pasted image 20260321024815.png]]
+![[Pasted image 20260321024821.png]]
+![[Pasted image 20260321024827.png]]
+![[Pasted image 20260321024834.png]]
+
+![[Pasted image 20260321025416.png]]
+![[Pasted image 20260321025423.png]]
+![[Pasted image 20260321025653.png]]

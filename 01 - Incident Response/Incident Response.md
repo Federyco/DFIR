@@ -321,6 +321,157 @@ Get-WinEvent -Path .\Desktop\merged.evtx -FilterXPath "*[System[(EventID=4104)] 
 - https://tryhackme.com/path/outline/cybersecurity101 [No Completado]
 
 ![[Pasted image 20260312174609.png]]
+------------------------------------------------------------------------------------------------------------
+# Sección 1
+
+- https://tryhackme.com/room/offensivesecurityintro [Completado]
+
+![[Pasted image 20260319171606.png]]
+
+
+- https://tryhackme.com/room/defensivesecurityintro [Completado]
+
+![[Pasted image 20260319171616.png]]
+
+- https://tryhackme.com/room/searchskills [Completado]
+
+![[Pasted image 20260319171638.png]]
+
+![[Pasted image 20260319173049.png]]
+
+What do you call a cryptographic method or product considered bogus or fraudulent?
+- Snake Oil
+
+What is the name of the command replacing `netstat` in Linux systems?
+- ss (Socket Statistics)
+
+![[Pasted image 20260319173708.png]]
+[Search Engine Operators List](https://github.com/cipher387/Advanced-search-operators-list)
+
+![[Pasted image 20260319173809.png]]
+
+![[Pasted image 20260319173817.png]]
+
+![[Pasted image 20260319173825.png]]
+
+![[Pasted image 20260319173832.png]]
+
+![[Pasted image 20260319181359.png]]
+
+![[Pasted image 20260319181407.png]]
+
+![[Pasted image 20260319181413.png]]
+
+![[Pasted image 20260319181626.png]]
+
+![[Pasted image 20260319181633.png]]
+
+![[Pasted image 20260319181639.png]]
+
+![[Pasted image 20260319181859.png]]
+
+
+
+
+--------------------------------------------------------------------------
+# Sección 2
+
+- https://tryhackme.com/room/linuxfundamentalspart1 [Completado]
+- https://tryhackme.com/room/linuxfundamentalspart2 [Completado]
+- https://tryhackme.com/room/linuxfundamentalspart3 [Completado]
+
+--------------------------------------------------------------------------
+# Sección 3
+
+- https://tryhackme.com/room/windowsfundamentals1xbx [Completado]
+- https://tryhackme.com/room/windowsfundamentals2x0x [Completado]
+- https://tryhackme.com/room/windowsfundamentals3xzx [Completado]
+- https://tryhackme.com/room/winadbasics [No Completado]
+
+![[Pasted image 20260319171904.png]]
+
+
+![[Pasted image 20260319182125.png]]
+![[Pasted image 20260319182220.png]]
+![[Pasted image 20260319182228.png]]
+
+![[Pasted image 20260319182548.png]]
+![[Pasted image 20260319182554.png]]
+![[Pasted image 20260319182604.png]]
+[microsoft documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups)
+
+![[Pasted image 20260319182632.png]]
+![[Pasted image 20260319182640.png]]
+![[Pasted image 20260319182647.png]]
+![[Pasted image 20260319182653.png]]
+
+![[Pasted image 20260319183017.png]]
+![[Pasted image 20260319183023.png]]
+![[Pasted image 20260319183029.png]]
+![[Pasted image 20260319183036.png]]
+![[Pasted image 20260319183042.png]]
+![[Pasted image 20260319183048.png]]
+![[Pasted image 20260319183054.png]]
+![[Pasted image 20260319183100.png]]
+![[Pasted image 20260319183112.png]]
+![[Pasted image 20260319183119.png]]
+
+![[Pasted image 20260319213038.png]]
+![[Pasted image 20260319213052.png]]
+
+![[Pasted image 20260319213828.png]]
+![[Pasted image 20260319213835.png]]
+![[Pasted image 20260319213841.png]]
+![[Pasted image 20260319213848.png]]
+![[Pasted image 20260319213854.png]]
+![[Pasted image 20260319213903.png]]
+![[Pasted image 20260319213909.png]]
+![[Pasted image 20260319213914.png]]
+![[Pasted image 20260319213922.png]]
+![[Pasted image 20260319213928.png]]
+![[Pasted image 20260319213934.png]]
+![[Pasted image 20260319213941.png]]
+![[Pasted image 20260319214000.png]]
+![[Pasted image 20260319214006.png]]
+
+![[Pasted image 20260319215853.png]]
+![[Pasted image 20260319215904.png]]
+![[Pasted image 20260319215913.png]]
+![[Pasted image 20260319215923.png]]
+![[Pasted image 20260319215941.png]]
+
+![[Pasted image 20260319220819.png]]
+![[Pasted image 20260319220829.png]]
+![[Pasted image 20260319220838.png]]
+![[Pasted image 20260319220851.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+# Sección 4
+
+- https://tryhackme.com/room/windowscommandline [No Completado]
+
+![[Pasted image 20260319172008.png]]
+
+- https://tryhackme.com/room/windowspowershell [No Completado]
+
+![[Pasted image 20260319172024.png]]
+
+- https://tryhackme.com/room/linuxshells [No Completado]
+
+![[Pasted image 20260319172043.png]]
+
 
 
 ## Mitre ATT&CK

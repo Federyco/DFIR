@@ -124,21 +124,65 @@ ahora finalmente nos solicitan obtener los datos que se encuentran dentro del ar
 utilizando tshark obtenemos el dato con la query: tshark -r capture.pcapng -Y 'dns' -T fields -e dns.qry.name | grep ".bpakcaging.xyz"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- https://tryhackme.com/room/boogeyman2 [No Completado]
+- https://tryhackme.com/room/boogeyman2 [Completado]
 
 ![[Pasted image 20260314112524.png]]
+
+Para este caso se nos entregan los siguientes artefactos:
+
+- 1 Una copia del correo utilizado como phishing
+- 2 el memory dump de la pc infectada
+
+Para este caso se nos indica que el equipo cuenta con las herramientas de siempre vistas en las rooms de phishing y volatility.
+
+Primero miramos un poco el correo para detectar la información base:
+
+enviado por: westaylor23@outlook.com
+dirigido a: maxine.beck@quicklogisticsorg.onmicrosoft.com
+
+nombre del archivo enviado: Resume_WesleyTaylor.doc
+md5 del archivo: 52c4384a0b9e248b95804352ebec6c5b
+analisis de virus total: https://www.virustotal.com/gui/file/4db25ee3c46be38aa219fe2192711af65d55d5d7e25a889bb9990beb19f9b8b0/detection
+
+
+Utilizando olevba, extraemos un poco de información:
+
+descarga escondida: https://files.boogeymanisback.lol/aa2a9c53cbb80416d3b47d85538d9971/update.png
+
+nombre del proceso encargado de la ejecución: wscript.exe
+
+fullpath del archivo malicioso: C:\ProgramData\update.js
+
+Ahora analizando con Volatility -> vol -f WKSTN-2961.raw windows.pslist.PsList > pslist.txt
+obtenemos la listaa de procesos, y la envío a un txt, para trabajar más cómodo.
+
+
+dentro del txt, primer intento:
+cat pslist.txt | grep update.js   -> no retorna nada
+
+segundo intento: 
+cat pslist.txt | grep wscript.exe -> retorna 
+4260	1124	wscript.exe	0xe58f864ca0c0	6	-	3	False	2023-08-21 14:12:47.000000 	N/A	Disabled
+
+PID: 4260
+Parent PID: 1124
+
+![[Pasted image 20260319124048.png]]
+
+
+Leyendo los strings del archivo de memoria, podemos encontrar un poco de info extra, como la URL del .exe
+
+
+con vol -f WKSTN-2961.raw windows.netscan buscamos el PID de la conexión
+
+podemos utilizar un > scan.txt para leerlo más fácil
+
+para buscar info en la memoria sobre el archivo podemos usar el plugin windows.filescan
+
+vol -f WKSTN-2961.raw windows.memmap --dump --pid 6216 escaneo de memoria para el process id 6216
+
+esto genera un archivo con el resultado, luego dentro del mismo buscamos
+
+strings pid.6216.dmp | grep -e 'schtasks'
+
+y conseguimos el full patk de la nueva task creada
