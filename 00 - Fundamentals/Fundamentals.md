@@ -312,30 +312,6 @@ Diccionario:
 - sheband -> es la combinación de algunos caracteres que son agregados al principio del script, comienzan con #! seguidos del nombre del interprete que se utilizará para ejecutarlo.
 
 
-## Networking Concepts [No Completado]
-
-https://tryhackme.com/room/networkingconcepts
-
-![[Pasted image 20260312175628.png]]
-
-## Networking Essentials [No Completado]
-
-https://tryhackme.com/room/networkingessentials
-
-![[Pasted image 20260312175719.png]]
-
-## Networking Core Protocols [No Completado]
-
-https://tryhackme.com/room/networkingcoreprotocols
-
-![[Pasted image 20260312175741.png]]
-
-## Nerworking Secure Protocols [No Completado]
-
-https://tryhackme.com/room/networkingsecureprotocols
-
-![[Pasted image 20260312175803.png]]
-
 - https://tryhackme.com/module/wireshark [Completado]
 ![[Pasted image 20260314113132.png]]
 
@@ -715,22 +691,6 @@ Si tiene separadores como comas, puntos o cualquier otro simbolo: column -s sepa
 
 ![[Pasted image 20260319000939.png]]
 
-
-
-
-
-## Tcpdumps: The Basics [No Completado]
-
-https://tryhackme.com/room/tcpdump
-
-![[Pasted image 20260312175852.png]]
-
-## Nmap: The Basics [No Completado]
-
-https://tryhackme.com/room/nmap
-
-![[Pasted image 20260312175914.png]]
-
 https://tryhackme.com/room/introtosiem [Completado]
 
 ![[Pasted image 20260313202509.png]]
@@ -761,7 +721,7 @@ https://tryhackme.com/room/jrsecanalystintrouxo [No Completado]
 ![[Pasted image 20260319221223.png]]
 
 
-## Pre Security [PATH]
+## Pre Security [PATH] [Certificado Pendiente]
 
 - https://tryhackme.com/path/outline/presecurity [Completado]
 
@@ -1025,3 +985,251 @@ https://tryhackme.com/room/jrsecanalystintrouxo [No Completado]
 ![[Pasted image 20260321025416.png]]
 ![[Pasted image 20260321025423.png]]
 ![[Pasted image 20260321025653.png]]
+
+
+
+## Cyber Security 101 [Path]
+
+![[Pasted image 20260321030516.png]]
+
+- https://tryhackme.com/room/offensivesecurityintro [Completado]
+- https://tryhackme.com/room/defensivesecurityintro [Completado]
+- https://tryhackme.com/room/searchskills [Completado]
+- https://tryhackme.com/room/linuxfundamentalspart1 [Completado]
+- https://tryhackme.com/room/linuxfundamentalspart2 [Completado]
+- https://tryhackme.com/room/linuxfundamentalspart3 [Completado]
+- https://tryhackme.com/room/windowsfundamentals1xbx [Completado]
+- https://tryhackme.com/room/windowsfundamentals2x0x [Completado]
+- https://tryhackme.com/room/windowsfundamentals3xzx [Completado]
+- https://tryhackme.com/room/winadbasics [Completado] 
+- https://tryhackme.com/room/windowscommandline [Completado]
+- https://tryhackme.com/room/windowspowershell [Completado]
+- https://tryhackme.com/room/linuxshells [Completado]
+- https://tryhackme.com/room/networkingconcepts [Completado]
+
+![[Pasted image 20260312175628.png]]
+
+![[Pasted image 20260321200914.png]]
+![[Pasted image 20260321200921.png]]
+![[Pasted image 20260321200929.png]]
+![[Pasted image 20260321200939.png]]
+![[Pasted image 20260321200947.png]]
+![[Pasted image 20260321200955.png]]
+![[Pasted image 20260321201004.png]]
+![[Pasted image 20260321201010.png]]
+![[Pasted image 20260321201939.png]]
+![[Pasted image 20260321201948.png]]
+![[Pasted image 20260321201957.png]]
+
+[Kurose and Rose book](https://gaia.cs.umass.edu/kurose_ross/index.php)
+
+![[Pasted image 20260321202107.png]]
+![[Pasted image 20260321202117.png]]
+![[Pasted image 20260321202130.png]]
+![[Pasted image 20260321202140.png]]
+![[Pasted image 20260321202152.png]]
+
+![[Pasted image 20260321202341.png]]
+![[Pasted image 20260321202350.png]]
+![[Pasted image 20260321202355.png]]
+
+![[Pasted image 20260321202418.png]]
+![[Pasted image 20260321202429.png]]
+![[Pasted image 20260322100536.png]]
+![[Pasted image 20260322100525.png]]
+![[Pasted image 20260322100553.png]]
+
+
+- https://tryhackme.com/room/networkingessentials [Completado]
+
+![[Pasted image 20260312175719.png]]
+
+![[Pasted image 20260321204348.png]]
+![[Pasted image 20260321204356.png]]
+![[Pasted image 20260321204403.png]]
+
+![[Pasted image 20260321210813.png]]
+![[Pasted image 20260321210820.png]]
+
+![[Pasted image 20260321210832.png]]
+![[Pasted image 20260321210842.png]]
+
+![[Pasted image 20260321220326.png]]
+![[Pasted image 20260321220332.png]]
+![[Pasted image 20260321220337.png]]
+![[Pasted image 20260321220344.png]]
+![[Pasted image 20260321220352.png]]
+![[Pasted image 20260321220357.png]]
+
+![[Pasted image 20260321220618.png]]![[Pasted image 20260321220624.png]]
+![[Pasted image 20260321220631.png]]
+
+![[Pasted image 20260321220735.png]]
+![[Pasted image 20260321220740.png]]
+
+- https://tryhackme.com/room/networkingcoreprotocols [Completado]
+
+![[Pasted image 20260312175741.png]]
+
+![[Pasted image 20260321232323.png]]
+
+
+![[Pasted image 20260322095319.png]]
+![[Pasted image 20260322095325.png]]
+
+![[Pasted image 20260322095637.png]]
+![[Pasted image 20260322095651.png]]
+![[Pasted image 20260322095657.png]]
+
+![[Pasted image 20260322100052.png]]
+![[Pasted image 20260322100059.png]]
+![[Pasted image 20260322100105.png]]
+![[Pasted image 20260322100112.png]]
+![[Pasted image 20260322100117.png]]
+
+![[Pasted image 20260323012643.png]]
+![[Pasted image 20260323012655.png]]
+![[Pasted image 20260323012701.png]]
+
+GET archivo.extension para descargar un archivo una vez ingresado al FTP.
+
+
+![[Pasted image 20260323014905.png]]
+![[Pasted image 20260323014911.png]]
+![[Pasted image 20260323014919.png]]
+![[Pasted image 20260323014930.png]]
+
+![[Pasted image 20260323015116.png]]
+![[Pasted image 20260323015040.png]]
+![[Pasted image 20260323015046.png]]
+![[Pasted image 20260323015101.png]]
+![[Pasted image 20260323015117.png]]
+
+![[Pasted image 20260323015641.png]]
+![[Pasted image 20260323015706.png]]
+![[Pasted image 20260323015712.png]]
+![[Pasted image 20260323015813.png]]
+
+
+- https://tryhackme.com/room/networkingsecureprotocols [Completado]
+
+![[Pasted image 20260312175803.png]]
+
+![[Pasted image 20260323020431.png]]
+![[Pasted image 20260323020437.png]]
+
+![[Pasted image 20260323020556.png]]
+![[Pasted image 20260323020607.png]]
+
+![[Pasted image 20260323020936.png]]
+![[Pasted image 20260323020943.png]]
+![[Pasted image 20260323020951.png]]
+![[Pasted image 20260323020958.png]]
+![[Pasted image 20260323021008.png]]
+![[Pasted image 20260323021015.png]]
+![[Pasted image 20260323021024.png]]
+![[Pasted image 20260323021031.png]]
+
+![[Pasted image 20260323021235.png]]
+
+
+![[Pasted image 20260323021401.png]]
+![[Pasted image 20260323021409.png]]
+
+![[Pasted image 20260323021855.png]]
+![[Pasted image 20260323021902.png]]
+
+![[Pasted image 20260323021908.png]]
+
+En esta room finalmente, se pide revisar un archivo pcap que contiene los datos de red capturados en un ingreso a facebook.
+
+Se nos provee de una key ssh para aplicar al protocolo TSSLS y poder desenciptar su contenido, de esta forma filtrando por http2 and http2.header.method == "POST" accedemos al flag y cerramos la actividad.
+
+
+## Tcpdumps: The Basics [Completado]
+
+https://tryhackme.com/room/tcpdump
+
+![[Pasted image 20260312175852.png]]
+
+![[Pasted image 20260323023359.png]]
+![[Pasted image 20260323023404.png]]
+
+![[Pasted image 20260323042729.png]]
+![[Pasted image 20260323042801.png]]
+![[Pasted image 20260323042810.png]]
+![[Pasted image 20260323042819.png]]
+
+![[Pasted image 20260323043244.png]]
+![[Pasted image 20260323043250.png]]
+![[Pasted image 20260323043257.png]]
+![[Pasted image 20260323043305.png]]
+![[Pasted image 20260323043314.png]]
+![[Pasted image 20260323043323.png]]
+
+leyendo cantidad de paquetes ICMP de una captura previa
+
+Command -> tcpdump icmp -n -r traffic.pcap | wc
+
+esta pregunta me fué particularmente dificil
+
+What hostname (subdomain) appears in the first DNS query?
+
+COmmand -> tcpdump -r traffic.pcap port 53 -A
+
+- `tcpdump` → herramienta para capturar y analizar tráfico de red
+- `-r traffic.pcap` → lee paquetes desde un archivo `.pcap` en lugar de capturarlos en vivo
+- `port 53` → filtra solo tráfico del puerto 53 (usado por **DNS**)
+- `-A` → muestra el contenido de los paquetes en formato ASCII (útil para ver dominios legibles)
+
+
+![[Pasted image 20260323045159.png]]
+![[Pasted image 20260323045219.png]]
+![[Pasted image 20260323045233.png]]
+![[Pasted image 20260323045240.png]]
+
+![[Pasted image 20260323050429.png]]
+![[Pasted image 20260323050438.png]]
+![[Pasted image 20260323050448.png]]
+![[Pasted image 20260323050454.png]]
+![[Pasted image 20260323050502.png]]
+![[Pasted image 20260323050508.png]]
+
+## Nmap: The Basics [No Completado]
+
+https://tryhackme.com/room/nmap
+
+![[Pasted image 20260312175914.png]]
+
+![[Pasted image 20260323051015.png]]
+![[Pasted image 20260323051021.png]]
+
+![[Pasted image 20260323051032.png]]
+![[Pasted image 20260323051039.png]]
+![[Pasted image 20260323051045.png]]
+![[Pasted image 20260323051052.png]]
+![[Pasted image 20260323051111.png]]
+![[Pasted image 20260323051122.png]]
+
+![[Pasted image 20260323051901.png]]
+![[Pasted image 20260323051907.png]]
+![[Pasted image 20260323051918.png]]
+![[Pasted image 20260323051931.png]]
+![[Pasted image 20260323051938.png]]
+![[Pasted image 20260323051944.png]]
+
+Comando util: nmap -sT ip -> revisa puerto x puerto en busca de una comunicación, de esa forma valida si esta UP.
+
+
+![[Pasted image 20260323053102.png]]
+![[Pasted image 20260323053109.png]]
+![[Pasted image 20260323053115.png]]
+
+![[Pasted image 20260323054207.png]]
+![[Pasted image 20260323054216.png]]
+![[Pasted image 20260323054222.png]]
+![[Pasted image 20260323054227.png]]
+![[Pasted image 20260323054232.png]]
+![[Pasted image 20260323054239.png]]
+![[Pasted image 20260323054246.png]]
+
