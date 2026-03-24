@@ -109,7 +109,7 @@
 | SOC / Blue Team     | 🟡 Intermediate |
 | Offensive Security  | 🟢 Basic        |
 
-# Rooms Completadas a la fecha (24/03/2026) -> [Rooms](Rooms_Completadas.md)
+## Rooms Completadas a la fecha (24/03/2026) -> [Rooms](Rooms_Completadas.md)
 
 # 🧭 Career Goals
 - SOC Analyst (L1/L2)
