@@ -5,10 +5,10 @@
 
 *Cybersecurity practitioner focused on Defensive Security, with hands-on experience in:*
 
-*🔍 Digital Forensics & Incident Response (DFIR)*
-*📊 Security Operations (SOC)*
-*🌐 Network Traffic Analysis*
-*🧠 Threat Investigation*
+- ### 🔍 Digital Forensics & Incident Response (DFIR)
+- ### 📊 Security Operations (SOC)
+- ### 🌐 Network Traffic Analysis
+- ### 🧠 Threat Investigation
 
 *Currently building real-world skills through labs, investigations, and tooling.*
 
