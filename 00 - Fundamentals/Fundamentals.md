@@ -1195,7 +1195,7 @@ COmmand -> tcpdump -r traffic.pcap port 53 -A
 ![[Pasted image 20260323050502.png]]
 ![[Pasted image 20260323050508.png]]
 
-## Nmap: The Basics [No Completado]
+## Nmap: The Basics [Completado]
 
 https://tryhackme.com/room/nmap
 
@@ -1233,3 +1233,243 @@ Comando util: nmap -sT ip -> revisa puerto x puerto en busca de una comunicació
 ![[Pasted image 20260323054239.png]]
 ![[Pasted image 20260323054246.png]]
 
+![[Pasted image 20260323061302.png]]
+![[Pasted image 20260323061309.png]]
+![[Pasted image 20260323061316.png]]
+![[Pasted image 20260323061323.png]]
+
+![[Pasted image 20260323061622.png]]
+![[Pasted image 20260323061638.png]]
+![[Pasted image 20260323061647.png]]
+
+
+- https://tryhackme.com/room/cryptographybasics [Completado]
+
+![[Pasted image 20260323062725.png]]
+
+![[Pasted image 20260323064554.png]]
+![[Pasted image 20260323064619.png]]
+![[Pasted image 20260323064625.png]]
+
+![[Pasted image 20260323064726.png]]
+![[Pasted image 20260323064730.png]]
+![[Pasted image 20260323064737.png]]
+
+Desencriptación por fuerza bruta -> https://www.dcode.fr/caesar-cipher
+
+
+![[Pasted image 20260323065123.png]]
+![[Pasted image 20260323065132.png]]
+
+![[Pasted image 20260323065138.png]]
+![[Pasted image 20260323065143.png]]
+
+![[Pasted image 20260323065327.png]]
+![[Pasted image 20260323065334.png]]
+
+Calculadora online -> https://www.wolframalpha.com/
+
+
+- https://tryhackme.com/room/publickeycrypto [Completado]
+
+![[Pasted image 20260323065608.png]]
+
+
+![[Pasted image 20260323065559.png]]
+![[Pasted image 20260323065622.png]]
+
+![[Pasted image 20260323071812.png]]
+![[Pasted image 20260323071822.png]]
+
+![[Pasted image 20260323071854.png]]
+![[Pasted image 20260323071904.png]]
+![[Pasted image 20260323071913.png]]
+
+RSA TOOLS:
+
+[rsatool](https://github.com/ius/rsatool)
+[RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool)
+
+Standard RSA
+
+n = p * q
+
+(n modular)
+!(n) = n - p - q +1
+
+Ejemplos:
+
+p= 4391
+q= 6659
+n = 4391 * 6659 -> 29.239.669
+
+
+!(n) = 29.239.669 - 4391 - 6659 + 1 -> 29.228.620
+
+
+![[Pasted image 20260323072623.png]]
+![[Pasted image 20260323072630.png]]
+![[Pasted image 20260323072636.png]]
+
+Diffie-Hellman Keys:
+
+Ejemplos:
+
+p = 29
+g = 5
+a = 12
+
+A = g^a mod p = 5^12 mod 29 =   7
+
+Diffie-Hellman utiliza una reducción Modular
+
+5^1 = 5  
+5^2 = 25  
+5^3 = 25 * 5 = 125 → 125 mod 29 = 9  
+5^4 = 9 * 5 = 45 → 45 mod 29 = 16
+etc....
+
+
+
+_p_ = 29 
+_g_ = 5
+_b_ = 17
+
+_B_= g^b mod p = 5^17  mod 29 = 9
+
+
+_p_ = 29
+_a_ = 12
+_B_ = 9
+
+key = _B_^_a_ mod _p_ = 9^12 mod 29 = 24
+
+
+_p_ = 29 
+_b_ = 17
+A = 7
+
+key = _A_^_b_ mod _p_ = 7^17 mod 29 = 24
+
+
+De esta forma por caminos opuestos, poniendo como base de conocimiento las variables p y q, accedemos al mismo resultado.
+
+
+
+![[Pasted image 20260323074320.png]]
+![[Pasted image 20260323074329.png]]
+![[Pasted image 20260323074336.png]]
+![[Pasted image 20260323074348.png]]
+
+![[Pasted image 20260323074631.png]]
+![[Pasted image 20260323074639.png]]
+
+![[Pasted image 20260323090835.png]]
+![[Pasted image 20260323090848.png]]
+[gnupg manual](https://www.gnupg.org/gph/de/manual/r1023.html)
+
+
+- https://tryhackme.com/room/hashingbasics [Completado]
+
+![[Pasted image 20260323091401.png]]
+
+![[Pasted image 20260323091515.png]]
+![[Pasted image 20260323091529.png]]
+
+![[Pasted image 20260323091557.png]]
+![[Pasted image 20260323091604.png]]
+![[Pasted image 20260323091611.png]]
+
+[Hash Colission Demo Page](https://www.mscs.dal.ca/~selinger/md5collision/)
+
+Interesante: 
+
+dado el MD5 siguiente -> 5c58ca24e8f64c058e2eda9928fd0f97
+
+para calcular cuanto es el output size en bytes, se separan los datos hexa y se cuenta las posiciones
+
+
+-------------------------------------------------------------------------------
+5c - 58 - ca - 24 - e8 - f6 - 4c - 05 - 8e - 2e - da - 99 - 28 - fd - 0f - 97
+  1	   2	   3	  4	  5	6	   7	   8	  9	 10	 11	12   13	  14	 15	16
+-------------------------------------------------------------------------------------------------------------
+
+
+![[Pasted image 20260323093142.png]]
+![[Pasted image 20260323093149.png]]
+
+![[Pasted image 20260323093347.png]]
+![[Pasted image 20260323093356.png]]
+![[Pasted image 20260323093404.png]]
+![[Pasted image 20260323093409.png]]
+![[Pasted image 20260323093415.png]]
+
+![[Pasted image 20260323093648.png]]
+![[Pasted image 20260323093656.png]]
+![[Pasted image 20260323093704.png]]
+
+[hash_examples](https://hashcat.net/wiki/doku.php?id=example_hashes)
+
+![[Pasted image 20260323094333.png]]
+![[Pasted image 20260323094341.png]]
+
+
+Para crackear los hashes se necesita correr el comando con el código correcto, para eso se utiliza hash examples. Chat GPT puede encontrar el método de encriptación y mediante la web sacamos el código que se utilizará para crackearlo
+
+
+![[Pasted image 20260323114755.png]]
+![[Pasted image 20260323114802.png]]
+![[Pasted image 20260323114807.png]]
+![[Pasted image 20260323114812.png]]
+![[Pasted image 20260323115010.png]]
+
+
+- https://tryhackme.com/room/johntheripperbasics [Completado]
+
+![[Pasted image 20260323115825.png]]
+
+![[Pasted image 20260323115837.png]]
+![[Pasted image 20260323115844.png]]
+![[Pasted image 20260323115911.png]]
+![[Pasted image 20260323162653.png]]
+![[Pasted image 20260323162704.png]]
+![[Pasted image 20260323162715.png]]
+
+![[Pasted image 20260323162750.png]]
+![[Pasted image 20260323162808.png]]
+![[Pasted image 20260323162816.png]]
+![[Pasted image 20260323162827.png]]
+
+
+[Hash identifier](https://hashes.com/en/tools/hash_identifier)
+
+Utilizando el link de arriba, se puede obtener los hash, con ellos aplicados en john facilmente se pasa la tarea de esta sala.
+
+
+![[Pasted image 20260324021701.png]]
+
+![[Pasted image 20260324022634.png]]
+![[Pasted image 20260324022646.png]]
+
+![[Pasted image 20260324023020.png]]
+![[Pasted image 20260324023028.png]]
+
+![[Pasted image 20260324023604.png]]
+![[Pasted image 20260324023615.png]]
+![[Pasted image 20260324023623.png]]
+![[Pasted image 20260324023634.png]]
+
+[Rules Documentation](https://www.openwall.com/john/doc/RULES.shtml)
+
+![[Pasted image 20260324024258.png]]
+
+![[Pasted image 20260324024307.png]]
+
+
+![[Pasted image 20260324024814.png]]
+
+![[Pasted image 20260324025159.png]]
+
+
+
+[OpenWall Wiki John Documentation](https://www.openwall.com/john/)
